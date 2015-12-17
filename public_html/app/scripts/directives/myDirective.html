@@ -1,0 +1,16 @@
+
+<form ng-submit="addTask(main.chpsMain0)">
+	<table style="display:inline-block">
+		<tr ng-repeat="(keyRow, valueRow) in controller.rows">
+			<td ng-repeat="(keyColumn, valueColumn) in controller.columns">
+							 ({{keyRow}}, {{keyColumn}})<br>			
+				<div id="cell{{keyRow}}{{keyColumn}} " ng-bind="valueFinaleFct(keyRow, keyColumn, valueRow, valueColumn)"></div>
+			</td>
+		</tr>
+
+	</table>
+	<div class="hidden" ng-transclude></div>
+<!-- 	<input type="text" ng-model="main.chpsMain0">
+	NGMODEL :<span>{{main.chpsMain0}}</span> -->
+
+</form>

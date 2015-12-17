@@ -1,0 +1,649 @@
+{
+    "javascript": {
+      "title": "Javascript quiz",
+      "nextStep": "AngularJS part1",
+      "scoreToPass": 5,
+      "questions": [
+        {
+          "id": "q1",
+          "level": "easy",
+          "question": "What is the difference between null and undefined ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "None",
+            "second": "typeof null == typeof undefined",
+            "third": "null defines an empty value, undefined a non assigned value",
+            "fourth": "When an undefined value is deleted, it becomes null"
+          }
+        }, {
+          "id": "q2",
+          "level": "easy",
+          "question": "How do you add a \"toto\" method to a \"tata\" object ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "tata.toto = function",
+            "second": "function tata.toto()",
+            "third": "tata.prototype.toto = function...",
+            "fourth": "function toto()"
+          }
+        }, {
+          "id": "q3",
+          "level": "easy",
+          "question": "How do you concatenate string characters ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "With ||",
+            "second": "With +",
+            "third": "With .",
+            "fourth": "With &"
+          }
+        }, {
+          "id": "q4",
+          "level": "easy",
+          "question": "What is the correct syntax of a \"for\" loop started at the beginning of a scope ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "for ( i = 0;  i < 10; i++) {}",
+            "second": "for (var i = 0 ; i < 10; i++) {}",
+            "third": "for (var i = 0,  i < 10, i++) {}",
+            "fourth": "for i in tab.length ()"
+          }
+        }, {
+          "id": "q5",
+          "level": "easy",
+          "question": "In this function : function Car() {this.maxSpeed = 200; return {maxSpeed: 300,getMaxSpeed: function() {return this.maxSpeed;}};} var MyCar = new Car();console.log(MyCar.getMaxSpeed()); What should be displayed ? ",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "300",
+            "second": "undefined",
+            "third": "200",
+            "fourth": "null"
+          }
+        }, {
+          "id": "q6",
+          "level": "easy",
+          "question": "What does this function do : var i = 10; function test () { i +=10; } ; test() ; console.log(i) ; ",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "An error : \"i  is undefined\"",
+            "second": "100",
+            "third": "20",
+            "fourth": "10"
+          }
+        }, {
+          "id": "q7",
+          "level": "medium",
+          "question": "How do you launch a function once a page has been loaded ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "window.onload() = toto();",
+            "second": "window.onload = toto();",
+            "third": "window.onload() = toto;",
+            "fourth": "window.onload = toto;"
+          }
+        }, {
+          "id": "q8",
+          "level": "medium",
+          "question": "What is NaN\"s type ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "String",
+            "second": "Object",
+            "third": "Number",
+            "fourth": "undefined"
+          }
+        }, {
+          "id": "q9",
+          "level": "medium",
+          "question": "What is a closure ?",
+          "propositions": ["first", "second", "third"],
+          "propositionLabels": {
+            "first": "An anonymous function which access to variables defined in the scope",
+            "second": "A variable that execute itself",
+            "third": "A closing parenthesis"
+          }
+        }, {
+          "id": "q10",
+          "level": "medium",
+          "question": "What does this function do : function toto () { this.data = \"coucou\" ; return function () { alert(this.data); }  toto ()();",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Type Error",
+            "second": "Alert(\"coucou\")",
+            "third": "Nothing",
+            "fourth": "Alert(\"undefined\")"
+          }
+        }, {
+          "id": "q11",
+          "level": "medium",
+          "question": "Which of these values is not falsy ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "0",
+            "second": "« 0 »",
+            "third": "« »",
+            "fourth": "undefined"
+          }
+        }, {
+          "id": "q12",
+          "level": "medium",
+          "question": "What is the purpose of a pool of variables ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "To improve perfs by preventing the garbage collector loop",
+            "second": "To send source code to the pool",
+            "third": "To store a set of variables",
+            "fourth": "To connect to multiple databases"
+          }
+        }, {
+          "id": "q13",
+          "level": "medium",
+          "question": "Try{ console.log(\"before\") ; setTimeout(function() { throw new Error(\"errr\") ; }) ; console.log(\"after\") ; } catch(e) { console.log(\"errr\") ;} What should be displayed ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "\"before\", \"errr\"",
+            "second": "\"before\", \"after\", \"errr\"",
+            "third": "\"before\", \"after\", then an error in the console\"s logs",
+            "fourth": "\"before\", \"errr\", \"after\""
+          }
+        }, {
+          "id": "q14",
+          "level": "medium",
+          "question": "What should be displayed ? console.log(1 +  -1 + 2);",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "2",
+            "second": "NaN",
+            "third": "02",
+            "fourth": "An error, TypeError"
+          }
+        }, {
+          "id": "q15",
+          "level": "medium",
+          "question": "In terms of performance, which expression is the most effective for adding 10 to an empty \"tab\" array ? ",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Tab.push(10)",
+            "second": "Tab[0] = 10",
+            "third": "Tab.splice(0, 0, 10)",
+            "fourth": "None, all are equals"
+          }
+        }, {
+          "id": "q16",
+          "level": "medium",
+          "question": "Alexis is fired due to his tasteless jokes, how do you remove its name from the following array : var tab = [\"Fabien\", \"Alexis\", \"Alicia\", \"Henry\"] ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "tab.split(1,1)",
+            "second": "tab.split(2,1)",
+            "third": "tab.splice(2,1)",
+            "fourth": "tab.splice(1,1)"
+          }
+        }, {
+          "id": "q17",
+          "level": "hard",
+          "question": "What is a mixin ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "A class which can be inherited by another class and can add functionality",
+            "second": "A prototype property for an object",
+            "third": "A type of loop",
+            "fourth": "A class inheritance"
+          }
+        }, {
+          "id": "q18",
+          "level": "hard",
+          "question": "In this function : function Boat() {this.speed = 150;} function Yacht() [ENTER] {this.color = \"blue\";} Yacht.prototype = Object.create(Boat.prototype); var niceBoat = new Yacht(); console.log(niceBoat.speed); What should be displayed ? ",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "150",
+            "second": "undefined",
+            "third": "null",
+            "fourth": "NaN"
+          }
+        }, {
+          "id": "q19",
+          "level": "hard",
+          "question": "Why is there JavaScript code wrapped in a function ? (function() { /* JavaScript code */ })() ;",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "it\"s a good practice that makes the code more readable and maintainable",
+            "second": "it\"s specific pattern to jQuery, following standards",
+            "third": "it\"s a required closure in EcmaScript 5",
+            "fourth": "To create a namespace and avoid conflicts between this code and another code "
+          }
+        }
+      ]
+    },
+    "angularJS": {
+      "title": "AngularJS quiz",
+      "nextStep": "AngularJS quiz part2",
+      "scoreToPass": 5,
+      "questions": [
+        {
+          "id": "q1",
+          "level": "easy",
+          "question": "What is the purpose of coding styles ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Its useless, each developer should write by his own, depending on how he is more comfortable with",
+            "second": "To define the same behavior for all project developers to improve readability and handling speed",
+            "third": "To ensure that everyone use the same variable names style to improve code readability",
+            "fourth": "To be able to parse the code easily"
+          }
+        }, {
+          "id": "q2",
+          "level": "easy",
+          "question": "Does Angular natively use jQuery ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "No, it doesn\"t use JQuery",
+            "second": "Yes, the last version",
+            "third": "yes, the 2.x version",
+            "fourth": "It depends on the Angular version"
+          }
+        }, {
+          "id": "q3",
+          "level": "easy",
+          "question": "What does « Angular is forgiving » means ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "It avoid displaying errors on production environment",
+            "second": "It helps you autocomplete your code",
+            "third": "It tolerates JavaScript errors in JavaScript files",
+            "fourth": "It doesn\"t display \"undefined\" if something doesn\"t exist"
+          }
+        }, {
+          "id": "q4",
+          "level": "easy",
+          "question": "Which does not work ?",
+          "propositions": ["first", "second", "third"],
+          "propositionLabels": {
+            "first": "data-ng-model",
+            "second": "ngModel",
+            "third": "ng-model"
+          }
+        }, {
+          "id": "q5",
+          "level": "easy",
+          "question": "What expression does not work ?",
+          "propositions": ["first", "second", "third"],
+          "propositionLabels": {
+            "first": "{{ test ? \"ok\" : \"not ok\" }}",
+            "second": "{{ test=\"coucou\";notTest=\"notCoucou\" }}",
+            "third": "{{ myData.myAttr + myString[myKey] }}"
+          }
+        }, {
+          "id": "q6",
+          "level": "easy",
+          "question": "Does AngularJS applications must be compiled ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Yes, to generate JavaScript files from Angular files",
+            "second": "Yes, to generate HTML from Angular templates",
+            "third": "Yes, to generate both JavaScript and HTML files",
+            "fourth": "No, it\"s built-in"
+          }
+        }, {
+          "id": "q7",
+          "level": "easy",
+          "question": "Who wrote Angular ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Fabien Mauquie",
+            "second": "John Angular",
+            "third": "Misko Hevery",
+            "fourth": "John Google"
+          }
+        }, {
+          "id": "q8",
+          "level": "easy",
+          "question": "Which are the Angular components ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Binding, Scope, Services, Directives, Model",
+            "second": "Controllers, Scope, Services, Directives, Filter",
+            "third": "Controllers, Scope, Services, Directives, Model",
+            "fourth": "Controllers, Scope, Services, Directives, Filter, Binding"
+          }
+        }, {
+          "id": "q9",
+          "level": "easy",
+          "question": "Which Angular directive is used for the binding of input fields ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Ng-model",
+            "second": "Ng-bind",
+            "third": "Ng-display",
+            "fourth": "Ng-ta-soeur"
+          }
+        }, {
+          "id": "q10",
+          "level": "easy",
+          "question": "ng-repeat directive creates ...",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "A binding by occurrence",
+            "second": "A loop",
+            "third": "A child scope for each repeated element",
+            "fourth": "A lasso"
+          }
+        }, {
+          "id": "q11",
+          "level": "easy",
+          "question": "angular.module(\"myModule\") ...",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Doesn\"t work",
+            "second": "Create a module on binding",
+            "third": "Call module function",
+            "fourth": "Recover a previously created module"
+          }
+        }, {
+          "id": "q12",
+          "level": "easy",
+          "question": "What does the $emit function do ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "It plays a sound on the screen",
+            "second": "It imitates a behavior already occurred",
+            "third": "It propagates a variable",
+            "fourth": "It sends an event to the parent scopes"
+          }
+        }, {
+          "id": "q13",
+          "level": "easy",
+          "question": "what does the $sanitize service do ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Clean an angular expression to not resolve to undefined",
+            "second": "Parse an HTML input to check that it is not vulnerable to xss injection flaws",
+            "third": "It is a service used by the $compiler to clean a function before it passes the $parser",
+            "fourth": "Filter form obscenities"
+          }
+        }, {
+          "id": "q14",
+          "level": "easy",
+          "question": "What is the difference between {{ }} and ng-bind in terms of user experience ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "ng-bind avoids displaying {{ }} before Angular realizes the linking phase",
+            "second": "No difference, can use both without affecting the user experience",
+            "third": "{{ }} outperforms. Ng-bind allows faster display to the user",
+            "fourth": "Ng-bind outperforms. {{ }} allows faster display to the user"
+          }
+        }, {
+          "id": "q15",
+          "level": "easy",
+          "question": "How do you inject an orderBy filter ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Function($orderBy) {…}",
+            "second": "Function($filterProvider) { var orderBy = $filterProvider (\"orderBy\"); … }",
+            "third": "Function(orderByFilter) { … }",
+            "fourth": "We can\"t, filters can only be used in templates"
+          }
+        }, {
+          "id": "q16",
+          "level": "easy",
+          "question": "In which order directive functions are called ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "compile, link, controller",
+            "second": "compile, pre-link, controller, post-link",
+            "third": "pre-link, compile, post-link, controller",
+            "fourth": "controller, compile, pre-link, post-link"
+          }
+        }, {
+          "id": "q17",
+          "level": "medium",
+          "question": "What is the difference between module.service() and module.factory() ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Services return objects and factories return functions",
+            "second": "It\"s the same",
+            "third": "Services invoke a new entity, factories returns an instantiated Service",
+            "fourth": "Factories can create configurable services to launch the application"
+          }
+        }, {
+          "id": "q18",
+          "level": "medium",
+          "question": "Which of the following services is not available during the config phase ?",
+          "propositions": ["first", "second", "third"],
+          "propositionLabels": {
+            "first": "Factory",
+            "second": "Provider",
+            "third": "Constant"
+          }
+        }, {
+          "id": "q19",
+
+          "level": "medium",
+          "question": "What is the syntax of the ngClick directive ?",
+          "propositions": ["first", "second", "third"],
+          "propositionLabels": {
+            "first": "<button ng-click=count = count+1 ng-init=count=0>+</button>",
+            "second": "<button ng-click=function() { count++;} ng-init=count=0>+</button>",
+            "third": "You can\"t write the function declaration inside the ng-click attribute : it has to be defined elsewhere and then called from ng-click"
+          }
+        }
+      ]
+    },
+    "angularJSPart2": {
+      "title": "AngularJS quiz part 2",
+      "nextStep": "Finished",
+      "scoreToPass": 5,
+      "questions": [
+        {
+          "id": "q1",
+          "level": "medium",
+          "question": "What is the purpose of the use strict in top of Javascript files or Javascript functions ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "To be more strict on facilities permitted by the language but considered like dangerous practices",
+            "second": "To use only the strict javascript version that runs on all browsers, unlike the non-strict version",
+            "third": "To allow the compiler to know that the file is not TypeStrict",
+            "fourth": "To ensure the code security and avoid external hacks that should rewrite code"
+          }
+        }, {
+          "id": "q2",
+          "level": "medium",
+          "question": "What is CORS ?",
+          "propositions": ["first", "second", "third"],
+          "propositionLabels": {
+            "first": "A token sent when submitting a form to prevent a third party to inject its data as a submitter",
+            "second": "Headers that define the ability of a server and a client application on different domain to communicate with XHR requests",
+            "third": "An HTML5 property to generate different tags depending on the performing browser, due to compatibility issues"
+          }
+        }, {
+          "id": "q3",
+          "level": "medium",
+          "question": "What does $scope.$apply do ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "To apply new bidding",
+            "second": "To apply some waiting changes",
+            "third": "To start a digest phase",
+            "fourth": "To let a third-party event trigger a process in the Angular context"
+          }
+        }, {
+          "id": "q4",
+          "level": "medium",
+          "question": "An Angular filter applied to an array gets :",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Only the modified part of the array",
+            "second": "A list",
+            "third": "The whole array at once",
+            "fourth": "Filter doesn\"t apply on arrays"
+          }
+        }, {
+          "id": "q5",
+          "level": "medium",
+          "question": "In a unit test, how do you get a Range filter ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "By writing it at the top of the code",
+            "second": "By writing it at the bottom of the code",
+            "third": "By injecting rangeFilter / injecting $filter and calling $filter(range)",
+            "fourth": "By injecting $filter(range) and calling $filter"
+          }
+        }, {
+          "id": "q6",
+          "level": "medium",
+          "question": "What is the name of the phase in which angular checks which binding values have changed ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "$digest",
+            "second": "$apply",
+            "third": "$proceed",
+            "fourth": "$bind"
+          }
+        }, {
+          "id": "q7",
+          "level": "medium",
+          "question": "With the $route service, if you declare a reloadOnSearch property to false on a route, what happens when changing a parameter in the string query ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "The page reloads",
+            "second": "A digest is launched",
+            "third": "The query is launched",
+            "fourth": "It adds an entry in the browser history"
+          }
+        }, {
+          "id": "q8",
+          "level": "medium",
+          "question": "What is the intruder :",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "$on",
+            "second": "$parse",
+            "third": "$apply",
+            "fourth": "$execAsync"
+          }
+        }, {
+          "id": "q9",
+          "level": "medium",
+          "question": "What is the intruder :",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "$formatters",
+            "second": "$viewValue",
+            "third": "$parent",
+            "fourth": "$error"
+          }
+        }, {
+          "id": "q10",
+          "level": "medium",
+          "question": "What is the purpose of the \"resolve\" attribute of the $routeProvider service ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "To perform processes on the $scope that will be injected into the controller of the route",
+            "second": "To resolve specific dependencies of a particular route",
+            "third": "To set to which route the user should be directed",
+            "fourth": "To resolve a given process on routes"
+          }
+        }, {
+          "id": "q11",
+          "level": "medium",
+          "question": "What does the $parse service do ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "It parses an Angular expression to check that it is not vulnerable to XSS injection flaws",
+            "second": "It converts Javascript functions to Angular expressions that can have a context",
+            "third": "It parses a variable to check that it is a valid regular expression",
+            "fourth": "It parses a route to check that it is declared on the application routes"
+          }
+        }, {
+          "id": "q12",
+          "level": "medium",
+          "question": "When do you call the $setPristine() function of the form controller ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "To start a digest",
+            "second": "During the recording of form data",
+            "third": "Before recording or erasing of the form data",
+            "fourth": "After recording or erasing of the form data"
+          }
+        }, {
+          "id": "q13",
+          "level": "medium",
+          "question": "On a directive, how do you bind \"user-says-its-happy\" in this case : <find-mood user-says-its-happy=\"iAm(\"happy\")\"></find-mood>",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Scope: { onHappy: \"=?userSaysItsHappy\" }",
+            "second": "Scope: { userSaysItsHappy: \"=\" }",
+            "third": "Scope: { \"user-says-its-happy\": \"&\" }",
+            "fourth": "Scope: { onHappy: \"&userSaysItsHappy\" }"
+          }
+        }, {
+          "id": "q14",
+          "level": "medium",
+          "question": "How many times will a digest loop run before an error is raised ?",
+          "propositions": ["first", "second", "third", "fourth", "fifth"],
+          "propositionLabels": {
+            "first": "5 times",
+            "second": "10 times",
+            "third": "20 times",
+            "fourth": "Between 10 and 100, it depends on how you configured your application",
+            "fifth": "Forever"
+          }
+        }, {
+          "id": "q15",
+          "level": "hard",
+          "question": "Which functions can be called on a module to create a config-free service that uses $http ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Service/factory/value",
+            "second": "Bind/controller/model",
+            "third": "Service/Factory/Controller",
+            "fourth": "Bind/Factory/Provider"
+          }
+        }, {
+          "id": "q16",
+          "level": "hard",
+          "question": "The link function of a directive is executed :",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "When clicking on a link",
+            "second": "During digest",
+            "third": "After the template compilation",
+            "fourth": "During apply"
+          }
+        }, {
+          "id": "q17",
+          "level": "hard",
+          "question": "When the user clicks on a button that have a ngClick attribute, Angular evaluates the expression and checks associated watches of ...",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Watchees",
+            "second": "Watchers",
+            "third": "Waiting for a change scopes",
+            "fourth": "All scopes"
+          }
+        }, {
+          "id": "q18",
+          "level": "hard",
+          "question": "When you call the resolve() function on an object created with $q.defer(), in which cases the associated promise is rejected in error ?",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "During callback",
+            "second": "If you pass it a promise rejected in error",
+            "third": "Never",
+            "fourth": "The resolve function does not exist"
+          }
+        }, {
+          "id": "q19",
+          "level": "hard",
+          "question": "The transclude property a directive is to ...",
+          "propositions": ["first", "second", "third", "fourth"],
+          "propositionLabels": {
+            "first": "Get the actual content of the element",
+            "second": "Extract data from a file",
+            "third": "Collect the old content of the element",
+            "fourth": "Transclude doesn\"t exist in Angular, only on KS"
+          }
+        }
+      ]
+    }
+  }

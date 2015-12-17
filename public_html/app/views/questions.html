@@ -1,0 +1,114 @@
+
+
+
+
+<!--     <table>
+        <tr ng-repeat-start="theme in mainActivity">
+            <td class="mainRow" colspan=2 ><b> {{theme.title}} <b></td>
+            <tr ng-repeat-end="questions in theme.questions">
+                <td >{{questions.id}} : {{questions.question}} </td>
+                <td >
+                    <ul>
+                        <li ng-if="questions.propositionLabels.first"> <input type="checkbox" > {{questions.propositionLabels.first}} </li>
+                        <li ng-if="questions.propositionLabels.second"><input type="checkbox"> {{questions.propositionLabels.second}} </li>
+                        <li ng-if="questions.propositionLabels.third"><input type="checkbox"> {{questions.propositionLabels.third}} </li>
+                        <li ng-if="questions.propositionLabels.fourth"><input type="checkbox" > {{questions.propositionLabels.fourth}} </li>
+                        <li ng-if="questions.propositionLabels.fifth"><input type="checkbox" > {{questions.propositionLabels.fifth}} </li>                                                             
+                    </ul>    
+                </td>
+
+            </tr>    
+        </table>
+        <br>
+        <table> -->
+            
+            <br>
+            <form ng-submit="checkResults('javascript')">
+                <table>
+                    <tr>
+                        <td class="mainRow" colspan=2 id="javascript">
+                            <b> Javascript <b><br>                               
+                            <div ng-if="correctAnswersCount"> 
+                                <b> Nombre de bonnes réponses : {{correctAnswersCount}} </b><br>
+                                <b> Nombre de mauvaises réponses : {{incorrectAnswersCount}} </b> 
+                            <div>                                
+                        </td>
+                        <tr data-ng-repeat="questions in mainActivity.javascript.questions">
+
+                            <td ng-class=" questions.status ? 'class-wrong' : 'class-good'">
+                                {{questions.id}} : {{questions.question}} 
+                                <span ng-if="questions.wrongAnswer" class="answerGreen">
+                                    <br> Answer is : {{questions.wrongAnswer}} 
+                                </span> 
+                                <span ng-if="questions.rightAnswer" class="answerGreen">
+                                    <br> Correct ! 
+                                </span> 
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li ng-if="questions.propositionLabels.first"> 
+                                        <input type="radio" name="{{questions.id}}" value="first" ng-model="first" ng-change="goToParentScope(questions.id,first)"> {{questions.propositionLabels.first}} 
+                                    </li>
+                                    <li ng-if="questions.propositionLabels.second">
+                                        <input type="radio" name="{{questions.id}}" value="second" ng-model="second" ng-change="goToParentScope(questions.id, second)"> {{questions.propositionLabels.second}} 
+                                    </li>
+                                    <li ng-if="questions.propositionLabels.third">
+                                        <input type="radio" name="{{questions.id}}" value="third" ng-model="third" ng-change="goToParentScope(questions.id, third)"> {{questions.propositionLabels.third}} 
+                                    </li>
+                                    <li ng-if="questions.propositionLabels.fourth">
+                                        <input type="radio" name="{{questions.id}}" value="fourth" ng-model="fourth" ng-change="goToParentScope(questions.id, fourth)"> {{questions.propositionLabels.fourth}} 
+                                    </li>
+                                    <li ng-if="questions.propositionLabels.fifth">
+                                        <input type="radio" name="{{questions.id}}" value="fifth" ng-model="fifth" ng-change="goToParentScope(questions.id, fifth)"> {{questions.propositionLabels.fifth}} 
+                                    </li>                                                             
+                                </ul>    
+                            </td>
+                        </tr>
+                        <br>
+                    </table>
+                    <br>
+                    <div class="mainRow">
+                        <input type="submit" value="Verifier les réponses pour Javascript">
+                    </div>
+                </form>
+
+
+<!--                 <br>
+                <table>
+                    <tr>
+                        <td class="mainRow"><b> angularJS <b></td>
+                        <tr data-ng-repeat="questions in mainActivity.angularJS.questions">
+                            <td >{{questions.id}} : {{questions.question}} </td>
+                            <td >
+                                <ul>
+                                    <li> <input type="checkbox"> {{questions.propositionLabels.first}} </li>
+                                    <li><input type="checkbox"> {{questions.propositionLabels.second}} </li>
+                                    <li><input type="checkbox"> {{questions.propositionLabels.third}} </li>
+                                    <li><input type="checkbox"> {{questions.propositionLabels.fourth}} </li>                                   
+                                </ul>    
+                            </td>
+
+                        </tr>    
+                    </table>
+                    <br>        
+                    <table>
+                        <tr>
+                            <td class="mainRow" ><b> angularJSPart2 <b></td>
+                            <tr data-ng-repeat="questions in mainActivity.angularJSPart2.questions">
+                                <td >{{questions.id}} : {{questions.question}} </td>
+                                <td >
+                                    <ul>
+                                        <li> <input type="checkbox"> {{questions.propositionLabels.first}} </li>
+                                        <li><input type="checkbox"> {{questions.propositionLabels.second}} </li>
+                                        <li><input type="checkbox"> {{questions.propositionLabels.third}} </li>
+                                        <li><input type="checkbox"> {{questions.propositionLabels.fourth}} </li>                                   
+                                    </ul>    
+                                </td>
+
+                            </tr>    
+                        </table>
+
+                        <br><br> -->
+
+

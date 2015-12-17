@@ -1,0 +1,37 @@
+
+<div>
+<!--     <form ng-submit="addTask(chpsMain0)"> -->
+        <table style="display:inline-block ">
+                <tr>
+                    <th>Activité</th>
+                    <th>Adding</th>
+                </tr>
+                <tr>
+                    <td><b> {{mainActivity[0].name}}<b></td>
+                    <td><!-- <input type="text" placeholder="New Task for {{mainActivity[0].name}}" ng-model='chpsMain0'> --></td>
+                </tr>
+                <tr ng-repeat="task in mainActivity[0].tasks">
+                    <td>{{task.name}}</td>
+                    <td></td>
+                </tr>   
+
+        </table>
+          <my-directive data="list">
+            <!-- nb of columns -->
+            <div ng-repeat="(key, value) in taskDates">
+                <my-directive-column></my-directive-column>
+            </div>
+          </my-directive>
+<!--     </form> -->
+</div>
+
+<!-- VALUEFINALE : <div ng-bind="valueFinaleFct()"></div> -->
+
+
+<br>
+<br>
+
+<ul ng-repeat="todos in mainActivity[0].tasks[0].todos">
+    <li>{{todos.date}}</li>
+</ul>
+
